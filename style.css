@@ -1,0 +1,212 @@
+:root {
+    --c1: hsl(171, 66%, 44%);
+    --c2: hsl(233, 100%, 69%);
+
+    --c3: hsl(210, 10%, 33%);
+    --c4: hsl(201, 11%, 66%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;  /* 400 600 */
+}
+body {
+    background-image: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+main {
+    text-align: center;
+    color: var(--c3);
+    padding: 0 1rem;
+}
+main p {
+    color: var(--c4);
+    line-height: 1.5rem;
+}
+.head {
+    margin-bottom: 7rem;
+}
+.head > img{
+    margin: 7rem 0 4rem 0;
+}
+h1,
+h2 {
+    margin-bottom: 1rem;
+}
+h3 {
+    margin-bottom: .5rem;
+}
+.head > p {
+    width: 100%;
+    max-width: 537px;
+    margin: 0 auto 2rem auto;
+}
+.btns {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.btns .btn{
+    color: white;
+    border: 0;
+    padding: .8rem 2rem;
+    border-radius: 2rem;
+}
+.btns .green-btn {
+    background-color: var(--c1);
+    box-shadow: 1px 1px 6px var(--c1);
+}
+.btns .green-btn:hover {
+    background-color: hsla(171, 66%, 44%, .8);
+}
+.btns .purple-btn {
+    background-color: var(--c2);
+    box-shadow: 1px 1px 6px var(--c2);
+}
+.btns .purple-btn:hover {
+    background-color: hsla(233, 100%, 69%, .8);
+}
+.tracking {
+    margin-bottom: 7rem;
+}
+.tracking .keep-track p {
+    width: 100%;
+    max-width: 608px;
+    margin: 0 auto 5rem auto;
+}
+.tracking .details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6rem;
+}
+.tracking .details > img {
+    max-width: 100%;
+    height: auto;
+}
+.tracking .details .left-img {
+    text-align: start;
+}
+.tracking .details .left-img p {
+    width: 100%;
+    max-width: 323px;
+}
+.tracking .details .left-img .info {
+    margin-bottom: 5rem;
+}
+.accessing {
+    margin-bottom: 3rem;
+}
+.accessing > p {
+    width: 100%;
+    max-width: 591px;
+    margin: 0 auto 6rem auto;
+}
+.accessing > img {
+    max-width: 100%;
+    height: auto;
+}
+.supercharging {
+    margin-bottom: 4rem;
+}
+.cards .cards-1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-bottom: 10rem;
+}
+.cards .cards-1 .card > img {
+    margin-bottom: 2rem;
+}
+.cards .cards-1 .card > p {
+    width: 100%;
+    max-width: 344px;
+}
+.cards .cards-2 {
+    margin-bottom: 7rem;
+}
+.clipboard {
+    margin-bottom: 7rem;
+}
+.clipboard > p {
+    width: 100%;
+    max-width: 597px;
+    margin: 0 auto 2.5rem auto;
+}
+footer {
+    background-color: #f5f6f8;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+    gap: 2rem;
+}
+footer .left-footer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+footer .left-footer .clicks {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 56px;
+    gap: 1rem;
+}
+footer .left-footer .clicks a {
+    margin-right: 4rem;
+    opacity: 45%;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+footer .left-footer .clicks a:hover {
+    color: var(--c1);
+}
+footer .left-footer > img {
+    width: 50px;
+}
+footer .right-footer a:not(:first-child) svg {
+    margin-left: 1.3rem;
+}
+footer .right-footer a svg:hover path {
+    fill: var(--c1);
+}
+@media(max-width: 1220px) {
+    .tracking .details {
+        justify-content: center;
+    }
+    .tracking .details .left-img {
+        text-align: center;
+    }
+}
+@media(max-width: 738px) {
+    footer .left-footer .clicks {
+        height: unset;
+    }
+    body {
+        background-image: url(./images/bg-header-mobile.png);
+    }
+}
+@media(max-width: 406px) {
+    .btns .btn {
+        width: 100%;
+    }
+}
+@media(max-width: 382px) {
+    footer .left-footer {
+        justify-content: center;
+    }
+    footer .left-footer .clicks {
+        align-items: center;
+    }
+    footer .left-footer .clicks a {
+        margin: 0;
+    }
+}
